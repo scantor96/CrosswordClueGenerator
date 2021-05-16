@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-#-*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-9-28 ??8:40
 from torch import nn
 from torch.autograd import Variable
 
