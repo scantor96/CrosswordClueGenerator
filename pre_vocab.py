@@ -9,7 +9,7 @@ from utils.util import get_time_dif, read_data, read_hypernyms
 import os
 from string import punctuation
 
-defs = os.path.join("/home/cantors2/Documents/xwordPytorch/data/defs")
+defs = os.path.join(".../data/defs")
 voc = Vocabulary()
 char_voc = Vocabulary()
 start_time = time.time()
@@ -26,12 +26,12 @@ for filepath in os.listdir(defs):
         for d in definition:
             voc.add_token(d)
 
-hypm = "/home/cantors2/Documents/xwordPytorch/data/bag_of_hypernyms.txt"
+hypm = ".../data/bag_of_hypernyms.txt"
 if hypm is not None:
     _, hypm_token = read_hypernyms(hypm)
     for h in hypm_token:
         voc.add_token(h)
-voc.save("/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json")
-char_voc.save("/home/cantors2/Documents/xwordPytorch/data/processed/char_vocab.json")
+voc.save(".../data/processed/vocab.json")
+char_voc.save(".../data/processed/char_vocab.json")
 time_dif = get_time_dif(start_time)
 print("Finished! Build vocabulary time usage:", time_dif)
