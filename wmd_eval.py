@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+# author:haiton
+# datetime:18-9-13 ??1:35
+# adapted by: scantor96
 from nltk.corpus import stopwords
 from nltk import download
 download('stopwords')  # Download stopwords list.
