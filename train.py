@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-9-13 ??1:35
-# adapted by: scantor96
 import os
 import numpy as np
 import torch
