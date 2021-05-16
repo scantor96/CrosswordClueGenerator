@@ -10,9 +10,9 @@ For next steps, input appropriate absolute paths wherever a ".../xxxx/..." spot 
 
 # Training
 Run train.py with the following parameters:
-  -rrn_type = "LSTM"
-  -emdim = 300
-  -hidim = 300
+- rrn_type = "LSTM"
+- emdim = 300
+- hidim = 300
   -nlayers = 2
   -use_seed = True
   -use_input = True
