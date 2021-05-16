@@ -9,7 +9,7 @@ For next steps, input appropriate absolute paths wherever a ".../xxxx/..." spot 
 6. Run pre_input_vectors.py
 
 # Training
-Run train.py with the following parameters:
+Run train.py, until it stops training, with the following parameters:
 - rnn_type = "LSTM"
 - emdim = 300
 - hidim = 300
@@ -31,9 +31,16 @@ Run train.py with the following parameters:
 - alpha = 0
 - beta = 1
 - exp_dir = ".../checkpoints/"
-- w2v_weights = ".../data/processed/embedding.pkl"
+- w2v_weights = ".../data/processed/embedding.pkl" (sent by email)
 - fix_embeddings = True
 - cuda = False
   
 # Generation
-  
+Run generate.py with the most recent model in ".../checkpoints/". If you haven't trained on your own, run with the model provided (by email).
+Upon running, the program will request an input puzzle. Copy the absolute path from ".../data/test.puz" and paste into input.
+
+# Evaluation
+Run wmd_eval.py for each set of words in ".../data/eval/"
+In line 23, a for-loop begins. For each test word, run it once with the first line being "for i in data_list" (this provides you with the WMD for the database clues) and once with the first line being "for i in gen_list" (this provides you with the WMD for the generated clues).
+
+
