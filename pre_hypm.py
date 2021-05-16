@@ -41,15 +41,15 @@ def get_hnym(hnym_data, vocab):
 
 start_time = time.time()
 print('Start prepare word hypernyms and weights at {}'.format(time.asctime(time.localtime(start_time))))
-hypernym_data = read_hypernyms("/home/cantors2/Documents/xwordPytorch/data/bag_of_hypernyms.txt")
+hypernym_data = read_hypernyms(".../data/bag_of_hypernyms.txt")
 vocab = Vocabulary()
-vocab.load("/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json")
+vocab.load(".../data/processed/vocab.json")
 word2hym, hym_weights = get_hnym(hypernym_data, vocab)
-defs = "/home/cantors2/Documents/xwordPytorch/data/defs/train.txt"
+defs = ".../data/defs/train.txt"
 top_k = 5
-save = "/home/cantors2/Documents/xwordPytorch/data/processed/train_hyp.json"
-save_hypm = "/home/cantors2/Documents/xwordPytorch/data/processed/train_word2hym.json"
-save_weights = "/home/cantors2/Documents/xwordPytorch/data/processed/train_hym_weights.json"
+save = ".../data/processed/train_hyp.json"
+save_hypm = ".../data/processed/train_word2hym.json"
+save_weights = ".../data/processed/train_hym_weights.json"
 #for i in defs:
 data = read_data(defs)
 hnym = np.zeros((len(data), top_k))
