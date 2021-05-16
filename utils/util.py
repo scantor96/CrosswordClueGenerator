@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-#-*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-14 ??2:19
 import time
 import codecs
 from collections import defaultdict
