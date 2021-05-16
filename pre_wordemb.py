@@ -12,11 +12,11 @@ from utils.datasets import Vocabulary
 from utils.util import get_time_dif
 import os
 
-argsvocab = "/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json"
-w2v = os.path.join("/home/cantors2/Documents/xword/data/word2vec/GoogleNews-vectors-negative300.bin.gz")
+argsvocab = ".../data/processed/vocab.json"
+w2v = os.path.join(".../data/word2vec/GoogleNews-vectors-negative300.bin.gz")
 emb_dim = 300
 start_time = time.time()
-save = "/home/cantors2/Documents/xwordPytorch/data/processed/embedding.pkl"
+save = ".../data/processed/embedding.pkl"
 print('Start prepare word embeddings at {}'.format(time.asctime(time.localtime(start_time))))
 vocab = Vocabulary()
 vocab.load(argsvocab)
