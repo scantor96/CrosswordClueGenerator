@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-9-11 ??11:30
-# adapted by: scantor96
 import torch
 from torch import nn
 from model.layers import Hypernym, Hidden, Gated
