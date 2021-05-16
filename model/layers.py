@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-20 ??2:41
 import torch
 from torch import nn
 import torch.nn.functional as F
