@@ -10,21 +10,21 @@ from utils.datasets import Vocabulary
 from utils.util import read_data
 
 
-embedding = "/home/cantors2/Documents/xwordPytorch/data/processed/embedding.pkl"
-train_defs = ("/home/cantors2/Documents/xwordPytorch/data/defs/train.txt")
-test_defs = ("/home/cantors2/Documents/xwordPytorch/data/defs/test.txt")
-valid_defs = ("/home/cantors2/Documents/xwordPytorch/data/defs/valid.txt")
+embedding = ".../data/processed/embedding.pkl"
+train_defs = ".../data/defs/train.txt"
+test_defs = ".../data/defs/test.txt"
+valid_defs = ".../data/defs/valid.txt"
 
-train_save = "/home/cantors2/Documents/xwordPytorch/data/processed/train.pkl"
-valid_save = "/home/cantors2/Documents/xwordPytorch/data/processed/valid.pkl"
-test_save = "/home/cantors2/Documents/xwordPytorch/data/processed/test.pkl"
+train_save = ".../data/processed/train.pkl"
+valid_save = ".../data/processed/valid.pkl"
+test_save = ".../data/processed/test.pkl"
 start_time = time.time()
 print('Start prepare input vectors at {}'.format(time.asctime(time.localtime(start_time))))
 
 vectors = []
 data = read_data(train_defs)
 vocab = Vocabulary()
-vocab.load("/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json")
+vocab.load(".../data/processed/vocab.json")
 with open(embedding, 'rb') as infile:
     word_embedding = pickle.load(infile)
 for element in data:
