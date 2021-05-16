@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-14 ??8:54
-# adapted by: scantor96
 import numpy as np
 import time
 import json
