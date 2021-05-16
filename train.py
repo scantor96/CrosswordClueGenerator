@@ -21,48 +21,48 @@ params={}
 
 # Common data arguments
 # location of vocabulary file
-voc = "/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json"
+voc = ".../data/processed/vocab.json"
 params['voc']=voc
 
 # Definitions data arguments
 # location of txt file with train definitions.
-train_defs = "/home/cantors2/Documents/xwordPytorch/data/defs/train.txt"
+train_defs = ".../data/defs/train.txt"
 params['train_defs']=train_defs
 
 # location of txt file with metrics definitions.
-eval_defs = "/home/cantors2/Documents/xwordPytorch/data/defs/valid.txt"
+eval_defs = ".../data/defs/valid.txt"
 params['eval_defs']=eval_defs    
 
 # location of txt file with test definitions
-test_defs = "/home/cantors2/Documents/xwordPytorch/data/defs/test.txt"  
+test_defs = ".../data/defs/test.txt"  
 params['test_defs']=test_defs 
    
 # location of train vectors for Input conditioning
-input_train = "/home/cantors2/Documents/xwordPytorch/data/processed/train.pkl"
+input_train = ".../data/processed/train.pkl"
 params['input_train']=input_train
     
 # location of metrics vectors for Input conditioning
-input_eval = "/home/cantors2/Documents/xwordPytorch/data/processed/valid.pkl"
+input_eval = ".../data/processed/valid.pkl"
 params['input_eval']=input_eval    
 
 # location of test vectors for Input conditioning
-input_test = "/home/cantors2/Documents/xwordPytorch/data/processed/test.pkl"  
+input_test = ".../data/processed/test.pkl"  
 params['input_test']=input_test    
 
 # location of train hypernyms for Hypernyms conditioning
-hypm_train="/home/cantors2/Documents/xwordPytorch/data/processed/train_hyp.json" 
+hypm_train=".../data/processed/train_hyp.json" 
 params['hypm_train']=hypm_train 
 
 # location of metrics hypernyms for Hypernyms conditioning
-hypm_eval="/home/cantors2/Documents/xwordPytorch/data/processed/valid_hyp.json"   
+hypm_eval=".../data/processed/valid_hyp.json"   
 params['hypm_eval']=hypm_eval  
 
 # location of test hypernyms for Hypernyms conditioning
-hypm_test="/home/cantors2/Documents/xwordPytorch/data/processed/test_hyp.json"  
+hypm_test=".../data/processed/test_hyp.json"  
 params['hypm_test']=hypm_test   
 
 # location of CH vocabulary file
-ch_voc="/home/cantors2/Documents/xwordPytorch/data/processed/char_vocab.json"
+ch_voc=".../data/processed/char_vocab.json"
 params['ch_voc']=ch_voc
 
 # Model parameters arguments
@@ -101,18 +101,6 @@ params['use_gated']=use_gated
 # use character level CNN
 use_ch = False
 params['use_ch']=use_ch
-
-# size of embeddings in CH conditioning
-# ch_emb_size=300
-# params['ch_emb_size']=ch_emb_size
-
-# list of feature map sizes in CH conditioning
-# ch_feature_maps = len(ch_voc)
-# params['ch_feature_maps']=ch_feature_maps
-
-# list of kernel sizes in CH conditioning
-# ch_kernel_sizes = len(ch_voc)
-# params['ch_kernel_sizes']=ch_kernel_sizes
 
 # use hypernym embeddings
 use_he=True
@@ -184,10 +172,10 @@ beta=1
 params['beta']=beta
 
 # where to save all stuff about training
-exp_dir="/home/cantors2/Documents/xwordPytorch/checkpoints/"
+exp_dir=".../checkpoints/"
 
 # path to pretrained embeddings to init
-w2v_weights="/home/cantors2/Documents/xwordPytorch/data/processed/embedding.pkl"
+w2v_weights=".../data/processed/embedding.pkl"
 
 # whether to update embedding matrix or not
 fix_embeddings=True
