@@ -15,29 +15,29 @@ from utils.test_preprocess import make_shortlist,make_txt,make_pkl,make_hyp_file
 import time
 
 # path to saved model params
-params = "/home/cantors2/Documents/xwordPytorch/checkpoints/params.json"
+params = ".../checkpoints/params.json"
 
 # path to saved model weights
-ckpt = "/home/cantors2/Documents/xwordPytorch/checkpoints/defseq_model_params_min_ppl.pkl"
+ckpt = ".../checkpoints/defseq_model_params_min_ppl.pkl"
 
 # temperature to use in sampling
 tau = 1
 
 # path to binary w2v file
-w2v_binary_path = "/home/cantors2/Documents/xwordPytorch/data/processed/embedding.pkl"
+w2v_binary_path = ".../data/processed/embedding.pkl"
 
 # where to save generate file
-gen_dir = "/home/cantors2/Documents/xwordPytorch/gen/"
+gen_dir = ".../gen/"
 
 # generate file name
-gen_name="gen1.txt"
+gen_name="gen.txt"
 
 # load puz + puz json
 input_puz = input("Enter puzzle path: ")
 start_time = time.time()
 test = make_txt(input_puz)
 make_shortlist(input_puz)
-generate_list = "/home/cantors2/Documents/xwordPytorch/data/shortlist_test.txt"
+generate_list = ".../data/shortlist_test.txt"
 make_pkl()
 make_hyp_files()
 
@@ -46,11 +46,11 @@ with open(params, "r") as infile:
 
 dataset = DefinitionModelingDataset(
     file=generate_list,
-    vocab_path="/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json",
-    input_vectors_path="/home/cantors2/Documents/xwordPytorch/data/processed/test.pkl",
-    ch_vocab_path="/home/cantors2/Documents/xwordPytorch/data/processed/char_vocab.json",
+    vocab_path=".../data/processed/vocab.json",
+    input_vectors_path=".../data/processed/test.pkl",
+    ch_vocab_path=".../data/processed/char_vocab.json",
     use_seed=model_params["use_seed"],
-    hypm_path="/home/cantors2/Documents/xwordPytorch/data/processed/test_hyp.json",
+    hypm_path=".../data/processed/test_hyp.json",
     mode="gen"
 )
 dataloader = DataLoader(
@@ -66,7 +66,7 @@ model = RNNModel(\
 model.to(device)
 model = torch.load(ckpt)
 voc = Vocabulary()
-voc.load("/home/cantors2/Documents/xwordPytorch/data/processed/vocab.json")
+voc.load(".../data/processed/vocab.json")
 
 
 def generate(model, dataloader, idx2word, strategy='greedy',max_len=20):
