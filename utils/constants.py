@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-#-*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-14 ??10:22
-# FOR MODEL VOCABULARY
 PAD = '<pad>'
 UNK = '<unk>'
 BOS = '<s>'
