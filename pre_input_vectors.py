@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-20 ??9:37
-# adapted by: scantor96
 import time
 import pickle
 import numpy as np
