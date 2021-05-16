@@ -1,5 +1,13 @@
 # CrosswordClueGenerator
 
+# Dependencies
+puzpy 0.2.5 https://github.com/alexdej/puzpy
+PyTorch 1.8.0 https://pytorch.org/
+tqdm 4.50.2 https://pypi.org/project/tqdm/
+NLTK 3.5 https://www.nltk.org/
+gensim 3.8.3 https://pypi.org/project/gensim/
+NumPy 1.19.2 https://numpy.org/install/
+
 # Preprocessing
 1. Download Google News Vectors https://code.google.com/archive/p/word2vec/ and save to .../data/word2vec/
 For next steps, input appropriate absolute paths wherever a ".../xxxx/..." spot is.
