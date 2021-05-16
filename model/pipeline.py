@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-#-*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-26 ??9:16
 import torch
 import numpy as np
 from tqdm import tqdm
