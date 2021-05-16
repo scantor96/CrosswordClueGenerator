@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# author:haiton
-# datetime:18-11-14 ??1:34
-# adapted by: scantor96
 import time
 from utils.datasets import Vocabulary
 from utils.util import get_time_dif, read_data, read_hypernyms
